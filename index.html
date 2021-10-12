@@ -31,18 +31,16 @@
 
     <div class="image-conatiner">
        <!-- MAIN IMAGE -->
-      <img class="MAIN-IMAGE" src="" alt="SacredGames" />
+      <img class="MAIN-IMAGE" onload="this.style.opacity=1" src="" alt="SacredGames" />
     </div>
 
     <nav>
       <a href="#"><i class="fas fa-arrow-left"></i></a>
-      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdavidblaine.com%2Fwp-content%2Fuploads%2F2017%2F04%2Fnetflix-logo.png&f=1&nofb=1" alt="Netflix"/>
       <a href="#"><i class="fas fa-heart"></i></a>
     </nav>
 
     <menu>
       <a href="#"><i class="fas fa-plus"></i></a>
-      <a href="#" class="play-btn"><i class="fas fa-play" style="color: rgb(212, 52, 52);"></i></a>
       <a href="#"><i class="fas fa-share-alt"></i></a>
     </menu>
 
@@ -54,7 +52,7 @@
     <h1 class="TITLE">Title</h1>
     <p class="text-gray size_sm">Thriller, Adventure, Horror</p>
     <!-- RATING -->
-    <div class="rating">
+    <!-- <div class="rating">
       <ul>
         <li><i class="fas fa-thumbs-up active"></i><li>
         <li><i class="fas fa-thumbs-up active"></i><li>
@@ -62,8 +60,80 @@
         <li><i class="fas fa-thumbs-up active"></i><li>
         <li><i class="fas fa-thumbs-down"></i><li>
       </ul>
-    </div>
+    </div> -->
+     <div class="container2">
+      <div class="inner">
+        <div class="rating">
+          <h2 class="ratingheading">Rating :</h2>
+          <span class="rating-num">4.0</span>
+          <div class="rating-stars">
+            <span><i class="active icon-star"></i></span>
+            <span><i class="active icon-star"></i></span>
+            <span><i class="active icon-star"></i></span>
+            <span><i class="active icon-star"></i></span>
+            <span><i class="icon-star"></i></span>
+          </div>
+        </div>
+        <!-- <div class="histo">
+          <div class="five histo-rate">
+            <span class="histo-star"> <i class="active icon-star"></i> 5 </span>
+            <span class="bar-block">
+              <span id="bar-five" class="bar">
+                <span>566,784</span>&nbsp;
+              </span>
+            </span>
+          </div>
 
+          <div class="four histo-rate">
+            <span class="histo-star"> <i class="active icon-star"></i> 4 </span>
+            <span class="bar-block">
+              <span id="bar-four" class="bar">
+                <span>171,298</span>&nbsp;
+              </span>
+            </span>
+          </div>
+
+          <div class="three histo-rate">
+            <span class="histo-star"> <i class="active icon-star"></i> 3 </span>
+            <span class="bar-block">
+              <span id="bar-three" class="bar">
+                <span>94,940</span>&nbsp;
+              </span>
+            </span>
+          </div>
+
+          <div class="two histo-rate">
+            <span class="histo-star"> <i class="active icon-star"></i> 2 </span>
+            <span class="bar-block">
+              <span id="bar-two" class="bar"> <span>44,525</span>&nbsp; </span>
+            </span>
+          </div>
+
+          <div class="one histo-rate">
+            <span class="histo-star"> <i class="active icon-star"></i> 1 </span>
+            <span class="bar-block">
+              <span id="bar-one" class="bar"> <span>136,457</span>&nbsp; </span>
+            </span>
+          </div>
+        </div> -->
+      </div>
+      <div class="container3">
+        <h2 class="ratingheading">Rotten Tomatoes :</h2>
+        <div class="progress">
+          <div class="title timer" data-from="0" data-to="85" data-speed="1800" style="text-align:center" >80</div>
+         
+          <div class="overlay"></div>
+          
+          <div class="left"></div>
+           
+          <div class="right"></div>
+        </div>
+      </div>
+    </div>
+    <!-- REVIEW -->
+    <div class="Review"><div class="container review"><div><img src="./user.png" alt="user-icon" height="30px" width="30px"> USER NAME</div>
+  <div style="padding-left:5% "; id="revw">"With a solid start to the drama,with every episode makes you heart beat faster. The rawness of the drama is surreal and gets you hooked. "</div>
+</div></div>
     <!-- YEAR, OTT PLATFORM, NO. OF EP? -->
     <ul class="info">
       <li><span class="text-gray">Year</span><span class="bold">2018</span></li>
