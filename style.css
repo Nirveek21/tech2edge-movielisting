@@ -179,15 +179,15 @@ section + section {
 .active {
   color: #df3e54;
 }
-/*
-.rating li {
+
+.ratings li {
   padding: 0 0.1rem;
 }
-.rating,
+.ratings,
 h1,
 p {
   margin-top: 0.5rem;
-}*/
+}
 .screnshots h2 {
   margin-left: 1rem;
 }
@@ -211,13 +211,13 @@ p {
   box-shadow: 0 4px 16px 0 #551c22;
 }
 
-.MAIN-IMAGE {
+/* .MAIN-IMAGE {
   opacity: 0;
   -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
   -ms-transition: all 2s ease;
   -o-transition: all 2s ease;
-}
+} */
 #revw {
   font-family: "Architects Daughter", cursive;
 }
@@ -290,163 +290,4 @@ p {
 }
 .rating-stars .active {
   color: #737373;
-}
-/*
-.rating-users {
-  font-size: 14px;
-}
-
-.histo {
-  float: left;
-  width: 50%;
-  font-size: 13px;
-}
-
-.histo-star {
-  float: left;
-  padding: 3px;
-}
-
-.histo-rate {
-  width: 100%;
-  display: block;
-  clear: both;
-}
-
-.bar-block {
-  margin-left: 5px;
-  color: black;
-  display: block;
-  float: left;
-  width: 75%;
-  position: relative;
-}
-
-.bar {
-  padding: 4px;
-  display: block;
-}
-
-#bar-five {
-  width: 0;
-  background-color: #9fc05a;
-}
-
-#bar-four {
-  width: 0;
-  background-color: #add633;
-}
-
-#bar-three {
-  width: 0;
-  background-color: #ffd834;
-}
-
-#bar-two {
-  width: 0;
-  background-color: #ffb234;
-}
-
-#bar-one {
-  width: 0;
-  background-color: #ff8b5a;
-}
-*/
-
-.container3 {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  background-color: #111116;
-  /* height: 100vh; */
-  align-items: center;
-}
-
-.progress {
-  width: 200px;
-  height: 200px;
-  font-size: 30px;
-  color: #fff;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  background: #07070c;
-  text-align: center;
-  line-height: 200px;
-  margin: 20px;
-}
-
-.progress::after {
-  content: "%";
-}
-
-.progress .title {
-  position: relative;
-  z-index: 100;
-}
-
-.progress .overlay {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-color: #07070c;
-}
-
-.progress .left,
-.progress .right {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 10px solid #222235;
-  border-radius: 100px 0px 0px 100px;
-  border-right: 0;
-  transform-origin: right;
-}
-
-.progress .left {
-  animation: load1 1s linear forwards;
-}
-
-.progress:last-of-type .right,
-.progress:first-of-type .right {
-  animation: load3 0.8s linear forwards 1s;
-}
-
-@keyframes load1 {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(180deg);
-  }
-}
-
-@keyframes load2 {
-  0% {
-    z-index: 100;
-    transform: rotate(180deg);
-  }
-
-  100% {
-    z-index: 100;
-    transform: rotate(270deg);
-  }
-}
-
-@keyframes load3 {
-  0% {
-    z-index: 100;
-    transform: rotate(180deg);
-  }
-
-  100% {
-    z-index: 100;
-    transform: rotate(315deg);
-  }
 }
