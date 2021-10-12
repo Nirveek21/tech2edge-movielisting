@@ -29,7 +29,7 @@ function displaydata(data) {
           <div class="card mb-4 bg-dark" style="width: 60rem">
           <div class="row g-0">
           <div class="col-md-5 p-2">
-          <img src="http://demo.tech2edge.co/samples/${data.characters[i].img}" class="img-fluid rounded-start" alt="...">
+          <img style="border-radius: 5rem;" src="http://demo.tech2edge.co/samples/${data.characters[i].img}" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-7">
           <div class="card-body">
@@ -60,7 +60,7 @@ function displaydata(data) {
           </div>
          </div>
         <div class="col-md-5 p-2">
-        <img src="http://demo.tech2edge.co/samples/${data.characters[i].img}" class="img-fluid rounded-start" alt="...">
+        <img style="border-radius: 5rem;" src="http://demo.tech2edge.co/samples/${data.characters[i].img}" class="img-fluid rounded-start" alt="...">
         </div>
         </div>
         </div>`);
