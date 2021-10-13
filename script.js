@@ -1,7 +1,3 @@
-/*alert(
-  "The data is been fetched from the api, also the images are in assets folder as given in the api."
-);*/
-
 /*fetching api*/
 
 fetch("http://demo.tech2edge.co/samples/data-sg")
@@ -23,17 +19,16 @@ function displaydata(data) {
   ).src = `http://demo.tech2edge.co/samples/${data.series.img}`;
 
   /*adding cast*/
-  for (i in data.characters) {    
-    if (i % 2 == 0) {
-      $(".CHARACTERS").append(`
+  for (i in data.characters) {
+    $(".CHARACTERS").append(`
           <div class="card mb-4 bg-dark" style="width: 60rem" id="${i}">
           <div class="row g-0">
           <div class="col-md-5 p-2">
-          <img style="border-radius: 5rem;" src="http://demo.tech2edge.co/samples/${data.characters[i].img}" class="img-fluid rounded-start" alt="...">
+          <img style="border-radius: 0.55rem;" src="http://demo.tech2edge.co/samples/${data.characters[i].img}" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-7">
           <div class="card-body">
-          <h4 class="card-title">PRESENTING</h4>
+          <h4 class="card-title">PRESENTING:-</h4>
           <div class="bar"></div>
           <div class="data">
           <div ><strong>NAME</strong> : ${data.characters[i].name} </div>
@@ -44,29 +39,5 @@ function displaydata(data) {
           </div>
           </div>
           </div>`);
-    } else {
-      $(".CHARACTERS").append(`
-          <div class="card mb-3 bg-dark " style="width: 60rem " id="${i}">
-          <div class="row g-0">
-          <div class="col-md-7">
-          <div class="card-body" >
-          <h4 class="card-title">PRESENTING</h4>
-          <div class="bar"></div>	
-          <div class="data">
-          <div><strong>NAME</strong> : ${data.characters[i].name} </div>
-          <div><strong>AGE</strong> : ${data.characters[i].age} </div> 
-          <div><strong>PROFESSION</strong> : ${data.characters[i].profession} </div>
-          </div>
-          </div>
-         </div>
-        <div class="col-md-5 p-2">
-        <img style="border-radius: 3rem;" src="http://demo.tech2edge.co/samples/${data.characters[i].img}" class="img-fluid rounded-end" alt="...">
-        </div>
-        </div>
-        </div>`);
-    }
-
   }
-
 }
-
