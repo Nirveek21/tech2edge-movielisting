@@ -23,10 +23,10 @@ function displaydata(data) {
   ).src = `http://demo.tech2edge.co/samples/${data.series.img}`;
 
   /*adding cast*/
-  for (i in data.characters) {
+  for (i in data.characters) {    
     if (i % 2 == 0) {
       $(".CHARACTERS").append(`
-          <div class="card mb-4 bg-dark" style="width: 60rem">
+          <div class="card mb-4 bg-dark" style="width: 60rem" id="${i}">
           <div class="row g-0">
           <div class="col-md-5 p-2">
           <img style="border-radius: 5rem;" src="http://demo.tech2edge.co/samples/${data.characters[i].img}" class="img-fluid rounded-start" alt="...">
@@ -46,7 +46,7 @@ function displaydata(data) {
           </div>`);
     } else {
       $(".CHARACTERS").append(`
-          <div class="card mb-4 bg-dark " style="width: 60rem " >
+          <div class="card mb-3 bg-dark " style="width: 60rem " id="${i}">
           <div class="row g-0">
           <div class="col-md-7">
           <div class="card-body" >
@@ -60,10 +60,13 @@ function displaydata(data) {
           </div>
          </div>
         <div class="col-md-5 p-2">
-        <img style="border-radius: 5rem;" src="http://demo.tech2edge.co/samples/${data.characters[i].img}" class="img-fluid rounded-start" alt="...">
+        <img style="border-radius: 3rem;" src="http://demo.tech2edge.co/samples/${data.characters[i].img}" class="img-fluid rounded-end" alt="...">
         </div>
         </div>
         </div>`);
     }
+
   }
+
 }
+

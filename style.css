@@ -84,11 +84,11 @@ nav img {
 .image-conatiner {
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.6));
   clip-path: ellipse(120% 100% at 50% 0%);
-  transition: opacity 0.75s ease;
+  transition: opacity 0.5s ease;
 }
 .image-conatiner:hover {
-  background-image: linear-gradient(60deg, #535028 0%, #b44738 100%);
-  opacity: 0.6;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%) !important;
+  opacity: 0.7 !important;
 }
 .image-conatiner > img {
   width: 100vw;
@@ -145,7 +145,6 @@ li span {
 .info {
   margin: 1rem auto;
   text-align: center;
-  font-size: 1.25rem !important;
 }
 .info li + li {
   margin-left: 2rem;
@@ -188,29 +187,13 @@ section + section {
   justify-content: center;
   align-items: center;
   margin: auto;
-  font-size: 1.15rem;
 }
 .active {
   color: #df3e54;
 }
-.fa-thumbs-down {
-  transition: 0.5s ease;
-}
-.fa-thumbs-down:hover {
-  color: #df3e54;
-  transform: scale(-1, -1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  transform: rotate(-180deg);
-}
+
 .ratings li {
   padding: 0 0.1rem;
-}
-.icon-star {
-  transition: 0.5s ease;
-}
-.icon-star:hover {
-  color: gold !important;
 }
 .ratings,
 h1,
@@ -234,10 +217,10 @@ p {
   -webkit-backdrop-filter: blur(17.5px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  transition: box-shadow 0.8s ease;
+  transition: box-shadow 0.5s ease;
 }
 .card:hover {
-  box-shadow: 10px 10px 10px 10px #551c22;
+  box-shadow: 0 4px 16px 0 #551c22;
 }
 
 /* .MAIN-IMAGE {
