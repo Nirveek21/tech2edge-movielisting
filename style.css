@@ -365,3 +365,20 @@ svg path {
     stroke-dashoffset: -156px;
   }
 }
+.glow {
+  -webkit-animation: glow 1s ease-in-out infinite alternate !important;
+  -moz-animation: glow 1s ease-in-out infinite alternate !important;
+  animation: glow 1s ease-in-out infinite alternate !important;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 15px #fff, 0 0 25px #fff, 0 0 35px #e60073,
+      0 0 45px #e60073, 0 0 55px #e60073, 0 0 65px #e60073, 0 0 75px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 25px #fff, 0 0 35px #ff4da6, 0 0 45px #ff4da6,
+      0 0 55px #ff4da6, 0 0 65px #ff4da6, 0 0 75px #ff4da6, 0 0 85px #ff4da6;
+  }
+}
