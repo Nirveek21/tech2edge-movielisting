@@ -58,6 +58,7 @@ a {
 }
 .MAIN-IMAGE {
   object-fit: cover;
+  transition: 1s ease;
 }
 nav {
   position: absolute;
@@ -86,9 +87,9 @@ nav img {
   clip-path: ellipse(120% 100% at 50% 0%);
   transition: opacity 0.5s ease;
 }
-.image-conatiner:hover {
+.MAIN-IMAGE:hover {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%) !important;
-  opacity: 0.7 !important;
+  opacity: 0.9 !important;
 }
 .image-conatiner > img {
   width: 100vw;
