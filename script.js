@@ -8,7 +8,15 @@ fetch("http://demo.tech2edge.co/samples/data-sg")
   })
   .catch((error) => console.log(error));
 
+function skeleton () {
+       const grid = document.querySelector('.CHARACTERS')
+  const cardTemplate = document.getElementById('card-template')
+  for (let i = 0; i < 6; i++) {
+    grid.append(cardTemplate.content.cloneNode(true))
+  }
+}
 /*display function*/
+
 function displaydata(data) {
   const { title, ott, desc, img } = data.series;
   document.querySelector(".TITLE").innerHTML = title;
@@ -19,6 +27,7 @@ function displaydata(data) {
   ).src = `http://demo.tech2edge.co/samples/${data.series.img}`;
 
   /*adding cast*/
+  $(".CHARACTERS").empty();
   for (i in data.characters) {
     $(".CHARACTERS").append(`
           <div class="card mb-4 bg-dark" style="width: 60rem" id="${i}">
